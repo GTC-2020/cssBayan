@@ -1,0 +1,113 @@
+body{
+  font-size: 10px;
+}
+.wrapper{
+  width: 50%;
+  margin: 0 auto;
+}
+.acordion__title{
+  font-size: 3rem;
+}
+
+.acordion__item{
+  border-top: 1px solid #bec0be;
+  font-size: 1.4rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.acordion__container{
+  color: #4245f1;
+  cursor: pointer;
+}
+
+.acordion__container:hover{
+  color: #000;
+}
+
+.acordion__item-image{
+  width: 25rem;
+  height: 25rem;
+  margin: 2rem auto;
+  display: none;
+  transition: .5s;
+}
+
+.acordion_input{
+  appearance: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.acordion_item-title{
+  display: block;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.acordion_input:checked ~ .acordion__item-image{
+  display: block;
+  transition: 1.7s;
+}
+
+.title_icon{
+  display: inline-block;
+  background-image: url(image/icons8-plus-math-64.png);
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+
+.acordion__container:hover  .title_icon{
+  display: block;
+  transition: .5s;
+}
+.acordion_input:checked ~ .acordion_item-title>.title_icon{
+  background-image: url(image/icons8-close-50.png);
+ }
+ .acordion__item:hover  .acordion__item-image{
+  display: block;
+  transition: 5s;
+}
+
+@media only screen and (max-width: 820px){
+  .acordion__title{
+    font-size: 2rem;
+  }
+  .acordion__item{
+    font-size: 1.2rem;
+    padding: 0.8rem;
+  }
+  .acordion__item-image{
+    width: 15rem;
+    height: 15rem;
+    margin: 1rem auto;
+  }
+  .title_icon{
+    width: 15px;
+    height: 15px;
+  }
+}
+@media only screen and (max-width: 320px){
+  .wrapper{
+    width: 100%;
+  }
+  .acordion__title{
+    font-size: 2rem;
+  }
+  .acordion__item{
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .acordion__item-image{
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem auto;
+  }
+  .title_icon{
+    width: 10px;
+    height: 10px;
+  }
+}
