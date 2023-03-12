@@ -11,10 +11,13 @@ body{
 .acordion__item{
   border-top: 1px solid #bec0be;
   font-size: 1.4rem;
+  padding: 1rem;
+  cursor: pointer;
 }
 
 .acordion__container{
   color: #4245f1;
+  cursor: pointer;
 }
 
 .acordion__container:hover{
@@ -36,7 +39,26 @@ body{
 }
 .acordion_item-title{
   display: block;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
 }
-.acordion_input:checked + .acordion__item-image{
+.acordion_input:checked ~ .acordion__item-image{
   display: block;
 }
+
+.title_icon{
+  display: inline-block;
+  background-image: url(image/icons8-plus-math-64.png);
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+
+.acordion__container:hover  .title_icon{
+  display: block;
+}
+.acordion_input:checked ~ .acordion_item-title>.title_icon{
+  background-image: url(image/icons8-close-50.png);
+ }
