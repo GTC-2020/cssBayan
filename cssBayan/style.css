@@ -1,0 +1,42 @@
+body{
+  font-size: 10px;
+}
+.wrapper{
+  width: 50%;
+  margin: 0 auto;
+}
+.acordion__title{
+  font-size: 3rem;
+}
+.acordion__item{
+  border-top: 1px solid #bec0be;
+  font-size: 1.4rem;
+}
+
+.acordion__container{
+  color: #4245f1;
+}
+
+.acordion__container:hover{
+  color: #000;
+}
+
+.acordion__item-image{
+  width: 25rem;
+  height: 25rem;
+  margin: 2rem auto;
+  display: none;
+}
+
+.acordion_input{
+  appearance: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.acordion_item-title{
+  display: block;
+}
+.acordion_input:checked + .acordion__item-image{
+  display: block;
+}
