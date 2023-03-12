@@ -8,6 +8,7 @@ body{
 .acordion__title{
   font-size: 3rem;
 }
+
 .acordion__item{
   border-top: 1px solid #bec0be;
   font-size: 1.4rem;
@@ -62,3 +63,46 @@ body{
 .acordion_input:checked ~ .acordion_item-title>.title_icon{
   background-image: url(image/icons8-close-50.png);
  }
+ .acordion__item:hover  .acordion__item-image{
+  display: block;
+}
+
+@media only screen and (max-width: 820px){
+  .acordion__title{
+    font-size: 2rem;
+  }
+  .acordion__item{
+    font-size: 1.2rem;
+    padding: 0.8rem;
+  }
+  .acordion__item-image{
+    width: 15rem;
+    height: 15rem;
+    margin: 1rem auto;
+  }
+  .title_icon{
+    width: 15px;
+    height: 15px;
+  }
+}
+@media only screen and (max-width: 320px){
+  .wrapper{
+    width: 100%;
+  }
+  .acordion__title{
+    font-size: 2rem;
+  }
+  .acordion__item{
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .acordion__item-image{
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem auto;
+  }
+  .title_icon{
+    width: 10px;
+    height: 10px;
+  }
+}
